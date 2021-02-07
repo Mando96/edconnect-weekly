@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project Explorer App</title>
+    </head>
+    <body>
+        <head>
+            <title>Project Explorer App</title>
+            
+             <!-- Bootstrap core CSS -->
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <style>
+                nav{
+                   background-color: #1472ee;
+    
+                   margin-left: 10px;
+                   margin-right: 10px;
+                   
+                }
+                
+                .nav-link{
+                    color: #c7d6ec;
+                    padding-top: 15px;
+                }
+                main{
+                    margin: 15px;
+                }
+                footer{
+                    background-color: rgb(231, 231, 230);
+                    color: rgb(104, 104, 104);
+                    margin: 5px;
+                    padding: 20px;
+                }
+            </style>
+        </head>
+    
+        <body>
+            <nav class="navbar navbar-light justify-content-around ">
+                <div class="row my-row">
+                    <a class="navbar-brand nav-name" href="index.html"> Project Explorer </a>   
+                    <form action="searchForm" class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search Projects">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <a class="nav-link" href="createproject.html">Submit</a>
+                </div>
+    
+                <div class="row my-row">
+                   
+                        <a class="nav-link" href="register.html">Sign up</a>
+                      
+                        <a class="nav-link" href="login.html">Login</a>
+                       
+                </div>
+            </nav>
+        <main>
+            <div class="contain">
+                <h3>Project 1</h3>
+                <div class="row my-row jumbotron">
+                    <div class="col-md-3 col-sm-3 my-col">
+                        <p>Created By <br> Baby Yoda</p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 my-col">
+                        <p>Date Created <br>2020-08-30</p>
+                    </div>
+                
+                    <div class="col-md-3 col-sm-3my-col">
+                        <p>Last Updated <br>2020-08-30</p>
+                    </div>
+
+                    <div class="col-md-2 col-sm-3 my-col d-flex justify-content-end">
+                        <a class="btn btn-primary " href="editproject.html">Edit Project</a>
+                    </div>
+                </div> 
+            </div>
+            
+            <div class="row my-row mx-auto">
+                <div class="col my-col">
+                    <h4>Project Abstract</h4>
+                    <div class="card">
+                        <div class="card-body">
+                            <P class="card-text">
+                                Summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+                                Sed nisi lacus sed viverra.Summary: Lorem ipsum dolor sit amet, <br>
+                                consectetur adipiscing elit,sed do eiusmod tempor incididunt ut <br>
+                                labore et dolore magna aliqua. Sed nisi lacus sed viverra.
+                            </P>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Comment</h4>
+                        <form action="">
+                            <textarea name="comment" id="" cols="10" rows="4" class="form-control">Leave a comment</textarea>
+                            <button class="btn btn-primary " type="submit">Submit</button>
+                        </form>
+                       
+                    </div>
+                </div>
+                <div class="col my-col">
+                    <h4>Project Details</h4>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title card-header">
+                                Author(s)
+                            </div>
+                            <div class="card-text">
+                                Baby Yoda
+                            </div>
+                        </div>
+                        <div class="card-text card-header">
+                            #web
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title card-header">
+                                Project files
+                            </div>
+                            <div class="card-text">
+                             No file
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </main>
+        <footer>
+            <div class="row text-right">
+                <div class="col-md-8">
+                   
+                </div>
+                <div class="col-md-4">
+                    <p>Project Explorer © 2020 MandoExpo</p> 
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

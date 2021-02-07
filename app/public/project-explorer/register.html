@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project Explorer App</title>
+        
+         <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            nav{
+               background-color: #1472ee;
+
+               margin-left: 10px;
+               margin-right: 10px;
+               
+            }
+            
+            .nav-link{
+                color: #c7d6ec;
+                padding-top: 15px;
+            }
+            main{
+                margin: 15px;
+            }
+            footer{
+                background-color: rgb(231, 231, 230);
+                color: rgb(104, 104, 104);
+                margin: 5px;
+                padding: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-light justify-content-around ">
+            <div class="row my-row">
+                <a class="navbar-brand nav-name" href="index.html"> Project Explorer </a>   
+                <form action="searchForm" class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search Projects">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <a class="nav-link" href="createproject.html">Submit</a>
+            </div>
+
+            <div class="row my-row">
+               
+                    <a class="nav-link" href="register.html">Sign up</a>
+                  
+                    <a class="nav-link" href="login.html">Login</a>
+                   
+            </div>
+        </nav>
+
+        <main class="container">
+            <div class="mx-auto">
+                <h2>Signup</h2>
+                <form action="signUp">
+                    <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                        <label >First name</label>
+                        <input type="text" class="form-control" name="firstName"  placeholder="First name">
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label >Last name</label>
+                        <input type="text" class="form-control" name="lastName"  placeholder="Last name" >
+                      </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                          <label>Email address</label>
+                          <input type="email" name="email" class="form-control" placeholder="Your Email address">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label>Password</label>
+                            <input type="password" name="password" class="form-control" placeholder="Your Password">
+                        </div>
+                      </div>
+                    <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                        <label>Program</label>
+                        <select name="program" class="custom-select">
+                            <option value="default">Choose...</option>
+                            <option value="computer_science">Computer Science</option>
+                            <option value="computer_information_systems">Computer Information Systems</option>
+                            <option value="computer_technology">Computer Technology</option>
+                        </select>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <label>Matric Number</label>
+                        <input type="text" name="matricNumber" class="form-control" placeholder="e.g 16/0306">
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <label>Year of Graduation</label>
+                        <select name="graduationYear" class="custom-select" >
+                            <option value="default">Choose...</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                        </Select>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary " type="submit">Submit</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="row text-right">
+                <div class="col-md-8">
+                   
+                </div>
+                <div class="col-md-4">
+                    <p>Project Explorer © 2020 MandoExpo</p> 
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
