@@ -54,19 +54,22 @@
                 <h1>Submit Project</h1>
 
                 <form action="submitProject" class="form-group">
-                    
-                    <label class="form-label">Project name</label>
-                    <input type="text" name="name" placeholder="Enter project name" class="form-control">
-
-                    <label class="form-label">Project abstract</label>
-                    <textarea name="abstract" class="form-control"></textarea>
-
-                    <label class="form-label">Authors</label>
-                    <input type="text" name="authors" placeholder="Enter author name (seperated by comma)" class="form-control">
-
-                    <label class="form-label">Tag(s)</label>
-                    <input type="text" name="tags" placeholder="Use # to tag projects with different topics (e.g. #javascript #c++" class="form-control"> 
-
+                    <div class="form-group">
+                        <label class="form-label">Project name</label>
+                        <input type="text" name="name" placeholder="Enter project name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Project abstract</label>
+                        <textarea name="abstract" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Authors</label>
+                    </div>
+                        <input type="text" name="authors" placeholder="Enter author name (seperated by comma)" class="form-control">
+                    <div class="form-group">
+                        <label class="form-label">Tag(s)</label>
+                        <input type="text" name="tags" placeholder="Use # to tag projects with different topics (e.g. #javascript #c++" class="form-control"> 
+                    </div>
                     <button class="btn btn-primary " type="submit">Continue</button>
                 </form>
             </div>
