@@ -53,74 +53,83 @@
                        
                 </div>
             </nav>
-        <main>
-            <div class="contain">
+        <main class="container">
                 <h3>Project 1</h3>
-                <div class="row my-row jumbotron">
-                    <div class="col-md-3 col-sm-3 my-col">
-                        <p>Created By <br> Baby Yoda</p>
-                    </div>
-                    <div class="col-md-3 col-sm-3 my-col">
-                        <p>Date Created <br>2020-08-30</p>
-                    </div>
-                
-                    <div class="col-md-3 col-sm-3my-col">
-                        <p>Last Updated <br>2020-08-30</p>
-                    </div>
-
-                    <div class="col-md-2 col-sm-3 my-col d-flex justify-content-end">
-                        <a href="editproject.html"><button class="btn btn-primary " type="submit">Edit Project</button></a>   
-                    </div>
-                </div> 
-            </div>
-            
-            <div class="row my-row mx-auto">
-                <div class="col my-col">
-                    <h4>Project Abstract</h4>
-                    <div class="card">
-                        <div class="card-body">
-                            <P class="card-text">
-                                Summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
-                                Sed nisi lacus sed viverra.Summary: Lorem ipsum dolor sit amet, <br>
-                                consectetur adipiscing elit,sed do eiusmod tempor incididunt ut <br>
-                                labore et dolore magna aliqua. Sed nisi lacus sed viverra.
-                            </P>
+                <div class="container">
+                    <div class="p-3 mt-3 mb-5 bg-light text-dark row">
+                        <div class="col">
+                            <p>Created By <br> Baby Yoda</p>
                         </div>
-                    </div>
-                    <div>
-                        <h4>Comment</h4>
-                        <form action="" class="form-group">
-                            <textarea name="comment" id="" cols="10" rows="4" class="form-control">Leave a comment</textarea>
-                            <button class="btn btn-primary " type="submit">Submit</button>
-                        </form>
-                       
+                        <div class="col">
+                            <p>Date Created <br>2020-08-30</p>
+                        </div>
+                    
+                        <div class="col">
+                            <p>Last Updated <br>2020-08-30</p>
+                        </div>
+
+                        <div class="d-flex justify-content-end col">
+                            <div>
+                                <a href="editproject.html" class="btn btn-primary">Edit Project</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            
+            <div class="row my-5">
+                <div class="col">
+                    <h4>Project Abstract</h4>
+                    <hr>
+                    <P class="md-5">
+                        Summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+                        Sed nisi lacus sed viverra.Summary: Lorem ipsum dolor sit amet, <br>
+                        consectetur adipiscing elit,sed do eiusmod tempor incididunt ut <br>
+                        labore et dolore magna aliqua. Sed nisi lacus sed viverra.
+                    </P>
+                    <div>
+                        <h4>Comment</h4>
+                        <form action="" >
+                            <div class="form-group">
+                                <textarea name="comment" id="" cols="10" rows="4" class="form-control" placeholder="Leave a comment"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                        <hr>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <p class="lead">No comments added yet</p>
+                        </div>  
+                    </div>
+                </div>
+
                 <div class="col my-col">
                     <h4>Project Details</h4>
+                    <hr>
                     <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title card-header">
-                                Author(s)
-                            </h5>
-                            <p class="card-text">
-                                Baby Yoda
-                            </p>
-                            <p class="card-text card-header">
-                                #web
-                            </p>
-                        </div> 
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="card-title card-header">
-                                Project files
-                            </div>
-                            <div class="card-text">
-                             No file
+                        <div class="card-header">
+                            <h5>Author(S)</h5>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item">
+                                <span>Baby Yoda</span>
                             </div>
                         </div>
+                        <div class="text-muted card-footer">
+                            <span class="mt-2">
+                                <a href="#">#billie</a>
+                            </span>
+                        </div>
+                    </div>
+
+                     <div class="mt-3 card">
+                            <div class=" card-header">
+                                <h5 > Project files</h5>
+                            </div>
+                            <div class="list-group list-group-flush">
+                                <div class="d-flex justify-content-center align-items-center list-group-item">
+                                    <p class="lead"> No file uploaded yet</p>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
